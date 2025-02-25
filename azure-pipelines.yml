@@ -31,7 +31,6 @@ steps:
       LATESTSENSOR=$(bash <(curl -Ls https://github.com/CrowdStrike/falcon-scripts/releases/latest/download/falcon-container-sensor-pull.sh) \
         -u "$(FALCON_CLIENT_ID)" \
         -s "$(FALCON_CLIENT_SECRET)" \
-        --type falcon-sensor \
         --platform x86_64 \
         --region us-1 \
         --type falcon-container | tail -1)
