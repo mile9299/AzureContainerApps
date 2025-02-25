@@ -45,7 +45,7 @@ steps:
     inputs:
       command: build
       Dockerfile: '**/Dockerfile'  # Path to your Dockerfile
-    displayName: 'Build, Patching, and Pushing Patched Falcon Sensor'
+    displayName: 'Build, Patching, and Pushing Patched App with Falcon Sensor'
 
   - task: AzureCLI@2
     displayName: 'Deploy to Azure Container Apps'
